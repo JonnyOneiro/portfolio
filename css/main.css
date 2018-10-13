@@ -1471,7 +1471,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ## main navigation 
  * ------------------------------------------------------------------- */
 .header-nav {
-    background: #0C0C0C;
+    background: rgba(12, 12, 12, 0.85);
     color: rgba(255, 255, 255, 0.25);
     font-family: "montserrat-light", sans-serif;
     font-size: 1.3rem;
@@ -1646,7 +1646,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     top: 24px;
     height: 42px;
     width: 42px;
-    line-height: 42px;
+    line-height: 43px;
     font-family: "montserrat-medium", sans-serif;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -1658,10 +1658,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-menu-toggle.opaque {
     background-color: #000000;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .header-menu-toggle.opaque .header-menu-text {
     background-color: #000000;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
@@ -3599,6 +3601,44 @@ footer .row {
         padding-left: 0;
     }
 }
+
+.sort-app_icons {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll; 
+}
+
+.sort-app_icons img {
+    display: flex;
+    align-content: center;
+
+    height: 100px;
+    width: 100px;
+}
+
+.sort-app_icons p {
+    
+}
+
+.tech-icon {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.tech-icon img {
+    height: 100px;
+    width: 100px;
+}
+
+.tech-icon p {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
 
 
 /*# sourceMappingURL=main.css.map */
